@@ -16,3 +16,6 @@ done >/dev/null 2>&1
 
 # Ensure that xrdb has finished running before moving on to start the WM/DE.
 [ -n "$xrdbpid" ] && wait "$xrdbpid"
+
+# keyboard layout
+setxkbmap -model pc104 -layout us,ru -variant ,, -option grp:alt_space_toggle
