@@ -153,3 +153,5 @@ nnoremap <leader>h :call ToggleHiddenAll()<CR>
 " So ":vs ;cfz" will expand into ":vs /home/<user>/.config/zsh/.zshrc"
 " if typed fast without the timeout.
 source ~/.config/nvim/shortcuts.vim
+
+set tabstop=2 shiftwidth=2 expandtab
