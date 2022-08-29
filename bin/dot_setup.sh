@@ -31,10 +31,9 @@ putgitrepo() {
 
 ### main script ###
 
-echo "vars:" $repo_dir $0
+#echo "vars:" $repo_dir $0
 #check whether this script is executed from within appropriate git repo. Otherwise,
 #  try to fetch files from github repo (original Luck's way)
-[[ -d "$repo_dir/.git"  && -d "$repo_dir/.git" ]] && echo 'dir'
 if [[ -d "$repo_dir/.git"  ]] && `grep -q Voidrice "$repo_dir/README.md"` ; then
   echo "copying from local repo $repo_dir"
   cp -rTf "$repo_dir" "$home_dir"
