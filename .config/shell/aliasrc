@@ -17,7 +17,7 @@ se() { cd ~/.local/bin; $EDITOR $(fzf) ;}
 alias \
 	cp="cp -iv" \
 	mv="mv -iv" \
-	rm="rm -vI" \
+	rm="rm -I" \
 	bc="bc -ql" \
 	mkd="mkdir -pv" \
 	yt="yt-dlp --embed-metadata -i" \
